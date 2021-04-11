@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Venher",
+  "homepage": "http://vikavenher.github.io/lab_4",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.14",
