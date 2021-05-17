@@ -20,15 +20,6 @@
     />
     <!-- Підключаємо css стилі -->
     <link rel="stylesheet" href="../css/task_3_js.css" />
-    <!-- 1 варіант підключення JS - локально, у тезі <head> -->
-    <script type="text/javascript">
-      // Вивід тексту в консоль розробника
-      console.log("Інформаційне повідомлення");
-      console.warn("Попереджувальне повідомлення");
-      console.error("Повідомлення про помилку");
-    </script>
-
-    <!--  <script type="text/javascript" src="../js/snow.js"></script>-->
   </head>
 
   <!--Тег призначений для розміщення інформації, яку бачить кінцевий користувач-->
@@ -243,10 +234,20 @@
       </div>
       <!-- Блок <div_5> -->
       <div class="block_e" id="div_5">
-        <form>
+        <!-- <form>
           <input type="button" value="Приклад таймеру" />
           <input type="button" value="Приклад інтервалу" />
-        </form>
+        </form> -->
+        <div id="animation_block">
+          <form id="animation_buttons">
+            <input id="btn_timer" type="button" value="Запустити таймер" />
+            <input id="btn_interval" type="button" value="Запустити інтервал" />
+          </form>
+
+          <div id="animation_context" class="block_e">
+            <img id="img" src="../img/icons/chart.png" alt="image" />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -255,11 +256,16 @@
       <a href="../index.html">Перейти на головну сторінку</a>
     </div>
 
-    <!-- ........................................................... -->
-
-    <!-- Підключення бібліотеки jQuery -->
     <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
-    <!-- Підключення файлу task_3_js.js -->
+
+    <script type="text/javascript">
+      // Вивід тексту в консоль розробника
+      console.log("Інформаційне повідомлення");
+      console.warn("Попереджувальне повідомлення");
+      console.error("Повідомлення про помилку");
+    </script>
+
+    <script type="text/javascript" src="../js/snow.js"></script>
     <script type="text/javascript" src="../js/task_3_js.js"></script>
   </body>
 </html>
